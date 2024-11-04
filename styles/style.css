@@ -1,0 +1,237 @@
+body {
+    margin:0;
+    padding: 0%;
+    font-family: calibri;
+    background-image: linear-gradient(#D16BA5, #86A8E7, #5FFBF1);
+}
+  
+  /* header */
+  
+  .logo {
+    color:white;
+    display:inline-lock;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .header {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+      box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+      position: fixed;
+      width: 100%;
+      z-index: 3;
+  }
+  
+  .header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background: transparent;
+      color: #00246B;
+    }
+  
+  .header li a {
+      display: block;
+      padding: 20px 20px;
+      text-decoration: none;
+      color:white;
+      font-weight: 600;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+      background-color: transparent;
+  }
+  
+  .header .logo {
+      display: block;
+      float: left;
+      font-size: 2em;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background.2s ease-out;
+      width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+      top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+      top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+      display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+      max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+      .header li {
+          float: left;
+      }
+      .header li a {
+          padding: 22px 14px;
+      }
+      .header .menu {
+          clear: none;
+          float: right;
+          max-height: none;
+      }
+      .header .menu-icon {
+          display: none;
+      }
+  }
+
+.shadow {
+    text-shadow: 2px 2px 2px #00246B;
+}
+
+
+
+main {
+    width: 100%;
+    height: auto; 
+}
+
+section {
+    width: 100%; 
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    margin-top: 8rem;
+    margin-left: 30px;
+    padding: 10px 20px 10px 30px;
+    background-color: #008793;
+}
+section h2{
+    color:rgb(34, 24, 126);
+    font-family: "Oleo Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#home h3 a{
+    color:black;
+    font-family: "Oleo Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aside1, .aside2 {
+    width: 100%; 
+    height: auto; 
+    margin-top: 8rem;
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    font: weight 500px;;
+   }
+
+
+@media (min-width: 768px) {
+    section {
+        width: 10%; 
+        float: left; 
+    }
+    
+    .aside1, .aside2 {
+        width: 40%; 
+        float: right; 
+        margin-top: 8rem; 
+    }
+
+    .aside2 {
+        margin-bottom: 18rem; 
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        width: 15%; 
+    }
+    
+    .aside1, .aside2 {
+        width: 35%; /
+    }
+}
+
+.aside2 img {
+    height: auto; 
+    max-width: 100%; 
+}
+footer {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    clear: both;
+    margin-top: 5rem;
+}
+footer p {
+    text-align: center;
+    color:white ;
+    padding: 1em 0;
+}
+
+#menu{
+    width: 100%;
+}

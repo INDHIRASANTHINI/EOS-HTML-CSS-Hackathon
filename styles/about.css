@@ -1,0 +1,310 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite GB S", serif;
+}
+html{
+    width: 100%;
+    height: 100%; 
+}
+body {
+width: 100%;
+height: 100%;
+background-image: linear-gradient(#D16BA5, #5FFBF1);
+    color:black;
+    overflow: hidden;
+}
+
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+    
+}
+
+.carousel-images img {
+    max-width: 100%;
+    display: none;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links h2 {
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li {
+    margin: 5px 0;
+}
+.links ul li a {
+    text-decoration: none;
+    color: #0a0b0c;
+}
+
+.links ul li a:hover {
+    text-decoration:underline;
+}
+
+.container{
+    display: flex;         
+    justify-content: space-between; 
+    margin-top: 35px;     
+   margin-bottom: 10px;
+    width: 100%;          
+}
+section {
+    flex: 0 0 60%;          
+    text-align: center;
+    width:50%;
+   padding-left: 10px;
+}
+section h1{
+    padding: 5px;
+}
+
+aside {
+     
+    width:50%;
+    flex: 0 0 40%;         
+    border:2px solid #0a0b0c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 500;   
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    
+
+
+}
+aside ul,li{
+    margin-left: 30px;
+    text-align: left;   
+}
+aside h2{
+    color: blue;
+    text-decoration: underline;
+    font-size:xx-large;
+    margin-left: 30px;
+    text-align: left;  
+}
+aside h3,a{
+    margin-left: 30px;
+    text-align: left;
+    color:#0a0b0c;
+    text-decoration: none;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite GB S", serif;
+}
+html, body {
+    width: 100%;
+    height: 100%; 
+    background-image: linear-gradient(#D16BA5, #5FFBF1);
+    color: black;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    max-width: 100%;
+    display: none;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links h2 {
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li {
+    margin: 5px 0;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #0a0b0c;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;         
+    justify-content: space-between; 
+    margin-top: 35px;     
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Allow items to wrap */
+    width: 100%;          
+}
+
+section {
+    flex: 0 0 60%;          
+    text-align: center;
+    padding-left: 10px;
+}
+
+section h1 {
+    padding: 5px;
+}
+
+aside {
+    width: 100%; /* Set default width to 100% on small screens */
+    flex: 0 0 40%;         
+    border: 2px solid #0a0b0c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 500;   
+    margin-top: 30px;
+    padding: 10px;
+}
+
+aside ul, li {
+    margin-left: 30px;
+    text-align: left;   
+}
+
+aside h2 {
+    color: blue;
+    text-decoration: underline;
+    font-size: xx-large;
+    margin-left: 30px;
+    text-align: left;  
+}
+
+aside h3, a {
+    margin-left: 30px;
+    text-align: left;
+    color: #0a0b0c;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    section {
+        flex: 0 0 100%; /* Full width on small screens */
+        padding: 0;
+    }
+    
+    aside {
+        width: 100%; /* Full width for aside */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add some top margin */
+    }
+    
+    button.prev, button.next {
+        padding: 8px; /* Smaller buttons on small screens */
+    }
+    
+    aside h2 {
+        font-size: large; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    button.prev, button.next {
+        padding: 5px; /* Even smaller buttons */
+    }
+    
+    aside h2 {
+        font-size: medium; /* Further adjust font size */
+    }
+    
+    section h1 {
+        font-size: large; /* Reduce section header font size */
+    }
+}
